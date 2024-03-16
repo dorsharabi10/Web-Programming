@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <script src="companies.js"></script>
+    <script src="JavaScript.js"></script>
+
+</head>
+<body onload="init()">
+
+    <div id="container">
+
+        <div id="controls">
+
+            <select id="carType">
+                <option value="-1">select type</option>
+                <option value="small">small</option>
+                <option value="medium">medium</option>
+            </select>
+            <input type="number" id="discountTB" /> <button onclick="disc()">Discount</button>
+                                                    <button onclick="sumi(1000)">Delete sum</button>
+
+        </div>
+        <div id="left_div">
+            <h1>Small</h1>
+            <div id="smallCars">
+              
+            </div>
+        </div>
+
+
+        <div id="right_div">
+            <h1>Medium</h1>
+            <div id="mediumCars"></div>
+        </div>
+
+
+        <div  >
+            <h1>Sum : </h1>
+            <div id="calc"></div>
+        </div>
+    </div>
+
+</body>
+</html>
